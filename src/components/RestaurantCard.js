@@ -26,6 +26,8 @@ const RestaurantCard = (props) => {
   );
 };
 
+// higher order component
+
 export const withDiscountLabel = (RestaurantCard) => {
   return (props) => {
     const { resData } = props;

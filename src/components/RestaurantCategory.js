@@ -21,7 +21,7 @@ const RestaurantCategory = ({ data }) => {
           <span className="text-xl">&#9660;</span>
         </div>
 
-        {showItems && <ItemList items={data.itemCards} />}
+        {showItems && <ItemList items={data.itemCards} btn="Add +" />}
       </div>
     </div>
   );
