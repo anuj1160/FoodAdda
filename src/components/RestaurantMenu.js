@@ -6,9 +6,8 @@ import RestaurantCategory from "./RestaurantCategory";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const RestaurantMenu = () => {
-  const resId = useParams();
+  const { resId } = useParams();
   const resInfo = useRestaurantMenu(resId);
-
   if (resInfo === null) {
     return <ShimmerMenuUi />;
   }
